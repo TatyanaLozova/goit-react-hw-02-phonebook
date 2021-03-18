@@ -72,6 +72,9 @@ class App extends Component {
       deleteContact,
      
     } = this;
+    
+    const getFilterContacts = filterContacts()
+
     return (
       <div className="App">
         <h1>Phonebook</h1>
@@ -80,11 +83,11 @@ class App extends Component {
         <h1>Contacts</h1>
         <Filter
           filter={this.state.filter}
-          changeFilter={changeFilter}
+          onChangeFilter={changeFilter}
         />
         <ContactList
-          contact={filterContacts}
-        deleteContact={deleteContact}/>
+          contacts={getFilterContacts}
+        onDeleteContact={deleteContact}/>
       </div>
     );
   }

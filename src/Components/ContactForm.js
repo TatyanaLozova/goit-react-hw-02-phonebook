@@ -4,7 +4,7 @@ class ContactForm extends Component {
         name: "",
         number: "",
     };
-    hendleChange = e => {
+    handleChange = e => {
         const { name, value } = e.target;
         this.setState({ [name]: value });
     };
@@ -23,7 +23,7 @@ class ContactForm extends Component {
                      <input type="text"
                         name="name"
                         value={name}
-                        onChange={this.hendleChange}
+                        onChange={this.handleChange}
                         placeholder="Ivan Ivanov"
                     />
                 </label>

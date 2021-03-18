@@ -2,16 +2,16 @@ import React from "react";
 import PropTypes from "prop-types";
 
 
-const ContactList = ({ contact, deleteContact }) => {
+const ContactList = ({ contacts, onDeleteContact }) => {
   return (
     <ul>
-      {contact.map(({ id, name, number }) => (
+      {contacts.map(({ id, name, number }) => (
         <li key={id}>
               <p>{name}: </p>
               <p>{number}</p>
           <button
             type="button"
-            onClick={() => deleteContact(id)}
+            onClick={() => onDeleteContact(id)}
           >
             Delete
           </button>
@@ -22,8 +22,8 @@ const ContactList = ({ contact, deleteContact }) => {
 };
 
 ContactList.propTypes = {
-  contact: PropTypes.array.isRequired,
-  deleteContact: PropTypes.func.isRequired,
+  contacts: PropTypes.array.isRequired,
+  onDeleteContact: PropTypes.func.isRequired,
 };
 
 export default ContactList;
