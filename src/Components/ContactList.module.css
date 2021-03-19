@@ -1,0 +1,24 @@
+.contact {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 15px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    -23px 0 20px -23px rgba(0, 0, 0, 0.6), 23px 0 20px -23px rgba(0, 0, 0, 0.6),
+    inset 0 0 40px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.btn {
+  font-weight: 500;
+  background-color: rgb(105, 247, 247);
+  border-radius: 5px;
+  border: none;
+}
+
+.btn:hover {
+  background-color: rgb(255, 0, 0);
+}
