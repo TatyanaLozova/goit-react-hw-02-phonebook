@@ -13,12 +13,13 @@
 }
 
 .btn {
-  font-weight: 500;
+  font-weight: 600;
   background-color: rgb(140, 194, 238);
   border-radius: 5px;
   border-color: rgb(140, 194, 238);
+  color: #ffff;
 }
 
 .btn:hover {
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(241, 68, 68);
 }

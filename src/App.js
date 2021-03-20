@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
  import { v4 as uuidv4 } from 'uuid';
-import ContactForm from './Components/ContactForm'
-import ContactList from './Components/ContactList';
-import Filter from './Components/Filter'
+import ContactForm from './Components/ContactForm/ContactForm'
+import ContactList from './Components/ContactList/ContactList';
+import Filter from './Components/Filter/Filter'
 
 
 import './App.css';
