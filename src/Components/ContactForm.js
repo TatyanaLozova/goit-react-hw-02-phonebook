@@ -1,4 +1,7 @@
 import React, { Component } from 'react'
+import s from './ContactForm.module.css'
+
+
 class ContactForm extends Component {
     state = {
         name: "",
@@ -17,27 +20,27 @@ class ContactForm extends Component {
     render() {
         const { name, number } = this.state;
         return (
-            <form onSubmit={this.handleSubmit}>
-                <label>
+            <form className={s.form} onSubmit={this.handleSubmit}>
+                <label className={s.label}>
                     Name
-                     <input type="text"
+                     <input className={s.input} type="text"
                         name="name"
                         value={name}
                         onChange={this.handleChange}
                         placeholder="Ivan Ivanov"
                     />
                 </label>
-                <label >
+                <label className={s.label} >
                     Number
-          <input
+          <input className={s.input}
                         type="text"
                         name="number"
                         value={number}
                         onChange={this.handleChange}
-                        placeholder="111-11-11"
+                      
                     />
                 </label>
-                <button type="submit">
+                <button className={s.btnAdd} type="submit">
                     Add contact
         </button>
                 

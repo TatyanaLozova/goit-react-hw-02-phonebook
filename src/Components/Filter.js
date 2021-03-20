@@ -1,12 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types';
+import s from './ContactForm.module.css'
 
 
 function Filter({ filter, onChangeFilter }) {
   return (
-    <label>
+    <label label className={s.label}>
       Find contacts by name
-      <input
+      <input  className={s.input}
         type="text"
         value={filter}
         onChange={onChangeFilter}
