@@ -5,7 +5,7 @@ import s from '../ContactForm/ContactForm.module.css'
 
 function Filter({ filter, onChangeFilter }) {
   return (
-    <label label className={s.label}>
+    <label className={s.label}>
       Find contacts by name
       <input  className={s.input}
         type="text"
