@@ -20,7 +20,7 @@ class App extends Component {
   };
 
   // добавляем контакт
-  addContact = (name, number) => {
+  addContact = ({name, number}) => {
     const { contacts } = this.state;
     const contact = {
       id: uuidv4(),
@@ -78,7 +78,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Phonebook</h1>
-        <ContactForm onSumbmit={addContact} />
+        <ContactForm onSubmit={addContact} />
 
         <h1>Contacts</h1>
         <Filter

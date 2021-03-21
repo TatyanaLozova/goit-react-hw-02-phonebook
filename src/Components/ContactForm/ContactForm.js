@@ -23,7 +23,8 @@ class ContactForm extends Component {
             <form className={s.form} onSubmit={this.handleSubmit}>
                 <label className={s.label}>
                     Name
-                     <input className={s.input} type="text"
+                     <input className={s.input} 
+                     type="text"
                         name="name"
                         value={name}
                         onChange={this.handleChange}
