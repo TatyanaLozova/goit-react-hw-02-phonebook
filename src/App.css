@@ -1,6 +1,9 @@
 body {
   background-size: cover;
   font-size: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   background-image: url(https://good-surf.ru/forum/urok/css/fon/images/big.jpg);
 }
 
